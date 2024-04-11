@@ -24,7 +24,14 @@
 ![img_1.png](img/img_1.png)
 
 
+2.2 mapper3之一键生成
+使用mybatis_generator逆向工程生成相关文件
 
+2.3 rest通用Bean工程构建
+
+
+模块建立流程
+![img.png](img.png)
 
 
 
