@@ -4,6 +4,7 @@ import com.atguigu.cloud.entities.Pay;
 import com.atguigu.cloud.mapper.PayMapper;
 import com.atguigu.cloud.service.PayService;
 import jakarta.annotation.Resource;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -14,6 +15,7 @@ import java.util.List;
  * @author cuiyy
  * @version v1.0.0
  **/
+@Service
 public class PayServiceImpl implements PayService {
 
     @Resource
