@@ -30,12 +30,27 @@
 2.3 rest通用Bean工程构建
 
 
-模块建立流程
+3模块建立流程
 ![img.png](img.png)
 
-swagger3常用注解
+3.1 swagger3常用注解
 ![img_1.png](img_1.png)
 
+3.2 时间格式问题
+@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+
+3.3 统一响应格式
+![img_2.png](img_2.png)
+
+状态码规范
+![img_3.png](img_3.png)
+
+
+3.4 统一返回对象
+
+3.5 全局异常处理
+
+使用全局配置或者单独 try catch，如果try catch 将不会进入全局异常处理
 
 
 
