@@ -19,7 +19,7 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    public static final String PaymentSrv_URL = "http://localhost:8001";
+    public static final String PaymentSrv_URL = "http://cloud-payment-service";
 
     @PostMapping(value = "/consumer/pay/add")
     public ResultData addOrder(@RequestBody PayDTO payDTO) {
