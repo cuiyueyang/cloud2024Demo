@@ -53,6 +53,7 @@ public class PayController {
 
     @GetMapping(value = "/pay/get/{id}")
     public ResultData getPay(@PathVariable("id") Integer id) {
+        log.info("8002");
         if (id == -1) {
             throw new RuntimeException("id不能为负数");
         }
