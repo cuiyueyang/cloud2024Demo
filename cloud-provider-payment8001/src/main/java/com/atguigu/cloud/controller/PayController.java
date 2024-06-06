@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * <p>Description: </p>
@@ -72,6 +73,14 @@ public class PayController {
 
     @GetMapping(value = "/pay/get/info")
     public String getInfoByConsul(@Value("${atguigu.info}") String atguiguInfo) {
+        // openFeign 超时测试
+        try {
+            TimeUnit.SECONDS.sleep(62);
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            return "error";
+        }
+
         return "server.port:" + port + ",atguigu.info:" + atguiguInfo;
     }
 
