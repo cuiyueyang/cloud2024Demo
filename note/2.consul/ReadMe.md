@@ -40,6 +40,11 @@ CAP: c ：一致性 a ：可用性 p ：分区容错性
 
 
 
+consul 配置修改：
+![img.png](img.png)
+
+![img_1.png](img_1.png)
+
 
 
 

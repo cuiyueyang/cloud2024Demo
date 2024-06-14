@@ -24,10 +24,10 @@ public class FeignConfig {
     public Retryer myRetryer() {
 
         //Feign默认配置，不走重试策略，直接返回
-//        return Retryer.NEVER_RETRY;
+        return Retryer.NEVER_RETRY;
 
 //        //设置最大请求次数为3(1+2)，初始间隔时间为100ms,重试最大时间间隔为1s
-        return new Retryer.Default(100, 1, 3);
+//        return new Retryer.Default(100, 1, 3);
 
     }
 
@@ -40,10 +40,10 @@ public class FeignConfig {
      * FULL -- 除了headers中定义的信息之外，还包括请求和响应的正文及元数据;
      * @return
      */
-    @Bean
-    Logger.Level feignLoggerLevel() {
-        return Logger.Level.FULL;
-    }
+//    @Bean
+//    Logger.Level feignLoggerLevel() {
+//        return Logger.Level.FULL;
+//    }
 
 
 

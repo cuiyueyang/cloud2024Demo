@@ -41,4 +41,12 @@ public interface PayFeignApi {
     @GetMapping("/pay/get/info")
     String mylb();
 
+    /**
+     * 支付-断路器测试
+     * @param id
+     * @return
+     */
+    @GetMapping(value = "/pay/circuit/{id}")
+    String myCircuit(@PathVariable("id") Integer id);
+
 }
