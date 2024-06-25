@@ -1,28 +1,28 @@
 BulkHead 隔离
 
 是什么
-![img.png](img.png)
+![img.png](img/img.png)
 
 能干嘛
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 两种实现
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 SemaphoreBulkhead
 原理
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 配置示例
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 
 ThreadPoolBulkhead
 概述
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 配置示例
-![img_6.png](img_6.png)
+![img_6.png](img/img_6.png)
 线程池原理
-![img_7.png](img_7.png)
+![img_7.png](img/img_7.png)
 
 
 
