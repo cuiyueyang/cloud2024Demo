@@ -34,7 +34,7 @@ spring:
           enabled: true
       #断路器配置
       circuitbreaker:
-        enabled: true
+        enabled: false
         group:
           enabled: true #没开分组永远不用分组的配置。精确优先、分组次之(开了分组)、默认最后
 
@@ -150,11 +150,11 @@ resilience4j:
         baseConfig: default
 
 
-## zipkin图形展现地址和采样率设置
-#management:
-#  zipkin:
-#    tracing:
-#      endpoint: http://localhost:9411/api/v2/spans
-#  tracing:
-#    sampling:
-#      probability: 1.0 #采样率默认为0.1(0.1就是10次只能有一次被记录下来)，值越大收集越及时。
+# zipkin图形展现地址和采样率设置
+management:
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  tracing:
+    sampling:
+      probability: 1.0 #采样率默认为0.1(0.1就是10次只能有一次被记录下来)，值越大收集越及时。

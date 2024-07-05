@@ -55,7 +55,7 @@ public interface PayFeignApi {
      * @return
      */
     @GetMapping(value = "/pay/bulkhead/{id}")
-    public String myBulkhead(@PathVariable("id") Integer id);
+    String myBulkhead(@PathVariable("id") Integer id);
 
     /**
      * Resilience4j Ratelimit 的例子-限流
@@ -63,6 +63,14 @@ public interface PayFeignApi {
      * @return
      */
     @GetMapping(value = "/pay/ratelimit/{id}")
-    public String myRatelimit(@PathVariable("id") Integer id);
+    String myRatelimit(@PathVariable("id") Integer id);
+
+    /**
+     * Micrometer(Sleuth)进行链路监控的例子
+     * @param id
+     * @return
+     */
+    @GetMapping(value = "/pay/micrometer/{id}")
+    String myMicrometer(@PathVariable("id") Integer id);
 
 }
