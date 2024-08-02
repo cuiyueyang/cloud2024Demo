@@ -6,11 +6,17 @@ cloud-consumer-feign-order80 feign消费者
 
 cloud-consumer-order80 loadBalancer消费者
 
+cloud-gateway9527 网关
+
 cloud-provider-payment8001 订单查询提供者
 
 cloud-provider-payment8002 订单查询提供者
 
 mybatis_generator2024 逆向工程
+
+note 相关笔记
+
+
 
 
 
