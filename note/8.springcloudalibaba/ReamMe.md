@@ -4,16 +4,16 @@ https://spring.io/projects/spring-cloud-alibaba
 
 介绍
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 组件
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 
 主要功能
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 
 官方文档地址：
@@ -26,7 +26,7 @@ nacos 注册中心和配置中心
 sentinel 熔断与限流
 seata 分布式事务
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 
 
